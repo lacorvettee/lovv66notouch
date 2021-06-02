@@ -1,12 +1,12 @@
 $(document).ready(function() {
       $("a#trigger").toggle(function() {
         // Отображаем скрытый блок
-        $("DIV#box").fadeIn(0); // fadeIn - плавное появление
+        $("DIV#box").fadeOut(0); // fadeIn - плавное появление
         return false; // не производить переход по ссылке
       },
       function() {
         // Скрываем блок
-        $("DIV#box").fadeOut(0); // fadeOut - плавное исчезновение
+        $("DIV#box").fadeIn(0); // fadeOut - плавное исчезновение
         return false; // не производить переход по ссылке
       }); // end of toggle()
     }); // end of ready()
